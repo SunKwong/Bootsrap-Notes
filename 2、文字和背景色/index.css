@@ -1,0 +1,49 @@
+@charset"utf-8";
+/* Bootstrap元素样式 */
+/* 不同颜色的文本 */
+/*红色*/
+.text-danger {
+    color: #a94442;
+}
+/*黄色*/
+.text-warning {
+    color: #8a6d3b;
+}
+/*蓝色*/
+.text-success {
+    color: #3c763d;
+}
+/*浅蓝色*/
+.text-info {
+    color: #31708f;
+}
+/*深蓝色*/
+.text-primary {
+    color: #337ab7;
+}
+/*灰色*/
+.text-muted {
+    color: #777;
+}
+ /* 不同背景色 */
+ /*红色*/
+.bg-danger {
+    background-color: #f2dede;
+}
+/*黄色*/
+.bg-warning {
+    background-color: #fcf8e3;
+}
+/*蓝色*/
+.bg-success {
+    background-color: #dff0d8;
+}
+/*浅蓝色*/
+.bg-info {
+    background-color: #d9edf7;
+}
+/*深蓝色*/
+.bg-primary {
+    color: #fff;
+    background-color: #337ab7;
+}

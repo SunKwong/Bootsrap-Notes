@@ -1,0 +1,21 @@
+@charset"utf-8";
+/* CSS初始化 */
+html,body,h1{
+	margin: 0;
+}
+body{
+	font-family: 'SimHei';
+	background-color: #fff;
+}
+/*CSS样式*/
+h1{
+	font-size: 3em；
+	margin:20px 0 15px 0;
+}
+.alert{
+	margin: 10px;
+	padding: 10px;
+	background-color: #fee;
+	color: #d33;
+	border: 1px solid #a66;
+}

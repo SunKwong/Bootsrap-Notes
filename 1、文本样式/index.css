@@ -1,0 +1,29 @@
+@charset"utf-8";
+/* Bootstrap样式 */
+/*文本对齐*/
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+}
+/*文本不换行*/
+.text-nowrap {
+    white-space: nowrap;
+}
+/*文本大小写*/
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-lowercase {
+    text-transform: lowercase;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}

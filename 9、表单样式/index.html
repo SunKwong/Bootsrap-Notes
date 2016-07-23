@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>表单样式</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+   	<![endif]-->
+</head>
+<body>
+
+   <h1>默认形式的表单</h1>
+   <form>
+     <div class="form-group">
+       <label>用户名：</label>
+       <input type="text" class="form-control" placeholder="请输入用户名">
+       <span class="help-block">帮助信息</span>
+     </div>
+     <div class="form-group"> 
+       <label>密码：</label>
+       <input type="text" class="form-control" placeholder="请输入密码">
+     </div>
+   </form>
+
+   <h1>行内形式的表单</h1>
+   <form class="form-inline">
+     <div class="form-group">
+       <label class="control-label">用户名</label>
+       <input type="text" class="form-control" placeholder="请输入用户名">
+     </div>
+     <div class="form-group"> 
+       <label class="control-label">密码：</label>
+       <input type="text" class="form-control" placeholder="请输入密码">
+     </div>
+   </form>
+
+   <h1>水平表单</h1>
+   <form class="form-horizontal container-fluid">
+     <div class="form-group">
+         <label class="col-md-2 control-label">用户名</label>
+       <div class="col-md-10">
+         <input type="text" class="form-control" placeholder="请输入用户名"> 
+        </div>
+     </div>
+     <div class="form-group"> 
+         <label class="control-label col-md-2">密码：</label>
+         <div class="col-md-10">
+           <input type="text" class="form-control" placeholder="请输入密码">
+         </div> 
+     </div>
+   </form>
+
+  <!-- 注意checkbox radio要用label括起来 -->
+   <h1>复选框</h1>
+      <form>
+        <div class="checkbox">
+            <label>
+              <input type="checkbox">体育
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+              <input type="checkbox">音乐
+            </label>
+        </div>
+      </form>
+    
+    <h1>单选框</h1>
+      <form>
+        <div class="radio">
+            <label>
+              <input type="radio" name="123">体育
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+              <input type="radio" name="123">音乐
+            </label>
+        </div>
+      </form>
+    
+    <h1>一行显示的复选框</h1>
+      <form>
+       <div class="checkbox">
+         <label class="checkbox-inline">
+           <input type="checkbox">体育
+         </label>
+         <label class="checkbox-inline">
+           <input type="checkbox">体育
+         </label>
+       </div>
+      </form>
+    
+    <h1>一行显示的单选框</h1>
+      <form>
+        <div class="radio">
+          <label class="radio-inline">
+            <input type="radio" name="123">体育
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="123">音乐
+          </label>
+        </div>
+      </form>
+
+      <h1>禁用单选/复选框</h1>
+      <form>
+        <div class="checkbox disabled">
+          <label>
+            <input type="checkbox" disabled>体育
+          </label>
+        </div>
+        <div class="radio disabled" >
+          <label>
+            <input type="radio" disabled>体育
+          </label>
+        </div>
+      </form>
+    
+    <h1>下拉菜单</h1>
+      <form>
+        <div class="form-group">
+            <select class="form-control">
+              <option>1</option> 
+              <option>2</option> 
+              <option>3</option> 
+              <option>4</option> 
+              <option>5</option> 
+            </select>
+        </div> 
+      </form>
+
+    <h1>状态类</h1>
+    <form>
+      <div class="form-group has-error">
+        <label class="control-label">错误信息</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group has-success">
+        <label class="control-label">成功信息</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group has-warning">
+        <label class="control-label">警告信息</label>
+        <input type="text" class="form-control">
+      </div>
+    </form>
+    
+    <h1>小图标</h1>
+    <form>
+        <div class="form-group has-error has-feedback">
+            <label class="control-label">错误信息</label>
+            <input type="text" class="form-control">
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+        </div>
+        <div class="form-group has-success has-feedback">
+            <label class="control-label">成功信息</label>
+            <input type="text" class="form-control">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+        <div class="form-group has-warning has-feedback">
+            <label class="control-label">警告信息</label>
+            <input type="text" class="form-control">
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+        </div>
+    </form>
+
+    <h1>不同尺寸的表单</h1>
+    <form class="form-inline">
+      <div class="form-group">
+        <label class="">用户名:</label>
+        <input type="text" class="form-control input-lg" placeholder="请输入用户名">
+        <label>用户名:</label>
+        <input type="text" class="form-control" placeholder="请输入用户名">
+        <label>用户名:</label>
+        <input type="text" class="form-control input-sm" placeholder="请输入用户名">
+      </div>
+    </form>
+    
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+  <!-- HTML和Bootstrap检查工具 -->
+  <script>
+    (function(){
+      var s=document.createElement("script");
+      s.onload=function(){
+        bootlint.showLintReportForCurrentDocument([]);
+      };
+      s.src="../js/bootlint.js";
+      document.body.appendChild(s)})();
+  </script>
+</body>
+</html>

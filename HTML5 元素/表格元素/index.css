@@ -1,0 +1,23 @@
+@charset"utf-8";
+/*初始化方案*/
+
+/*表格元素初始化*/
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    color: #777; 
+}
+th,td {
+    padding: 0;
+}
+th {
+    text-align: left;
+}
+
+

@@ -1,0 +1,56 @@
+@charset"utf-8";
+/*初始化方案*/
+
+/* 分组元素初始化方案 */
+p {
+    margin: 0 0 10px;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+figure,figcaption{
+    display: block;
+}
+figure {
+    margin: 0;
+}
+dl {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+dt,dd {
+    line-height: 1.42857143;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-left: 0;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+blockquote {
+    margin: 0 0 20px;
+    border-left: 5px solid #eee;
+    padding: 10px 20px;
+    font-size: 17.5px;
+}
+pre {
+    height: 0;
+    display: block;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 9.5px;
+    line-height: 1.42857143;
+    font-size: 13px;
+    color: #333;
+    background-color: #f5f5f5;
+    word-break: break-all;
+    word-wrap: break-word;
+}

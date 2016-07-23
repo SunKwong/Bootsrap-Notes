@@ -1,0 +1,217 @@
+@charset"utf-8";
+/* Bootstrap元素样式 */
+/* Bootstrap表单初始化样式 */
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 默认形式表单 */
+.form-group {
+    margin-bottom: 15px;
+}
+.form-control {
+    display: block;
+    width: 100%;height: 34px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 1.42857143;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+/* 行内形式表单 */
+@media (min-width: 768px){
+	.form-inline .form-group {
+		display: inline-block;
+	    margin-bottom: 0;
+	    vertical-align: middle;
+	}
+	.form-inline .control-label {
+	    margin-bottom: 0;
+	    vertical-align: middle;
+	}
+	.form-inline .form-control {
+	    display: inline-block;
+	    width: auto;
+	    vertical-align: middle;
+	}	
+}
+
+/* 水平表单 */
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width: 768px){
+	.form-horizontal .control-label {
+	    margin-bottom: 0;
+        padding-top: 7px;
+	    text-align: right;
+	}	
+}
+
+
+/* Bootstrap表单初始化样式 */
+input[type="radio"],input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    padding: 0;
+    line-height: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+/*Bootstrap单选/多选样式*/
+.radio,.checkbox {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.radio label, .checkbox label {
+    min-height: 20px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.radio input[type="radio"],.checkbox input[type="checkbox"], 
+.radio-inline input[type="radio"],.checkbox-inline input[type="checkbox"] {
+    position: absolute;	
+    margin-left: -20px;	
+    margin-top: 4px \9;	
+}
+
+/* 一行显示的单选复选框 */
+.radio-inline,.checkbox-inline {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-left: 20px;
+    font-weight: normal;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.radio-inline + .radio-inline, 
+.checkbox-inline + .checkbox-inline {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+/* 禁用单选/复选 */
+.radio.disabled label, .checkbox.disabled label, 
+fieldset[disabled] .radio label, fieldset[disabled] .checkbox label {
+    cursor: not-allowed;
+}
+input[type="radio"][disabled], input[type="checkbox"][disabled], 
+input[type="radio"].disabled, input[type="checkbox"].disabled, 
+fieldset[disabled] input[type="radio"], fieldset[disabled] input[type="checkbox"] {
+    cursor: not-allowed;
+}
+
+/* 状态类信息 */
+/* 错误 */
+.has-error .control-label, 
+.has-error .radio,.has-error .checkbox, 
+.has-error .radio-inline,.has-error .checkbox-inline, 
+.has-error.radio label,.has-error.checkbox label, 
+.has-error.radio-inline label, .has-error.checkbox-inline label 
+.has-error .help-block{
+    color: #a94442;
+}
+.has-error .form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+/* 成功 */
+.has-success .control-label, 
+.has-success .radio,.has-success .checkbox, 
+.has-success .radio-inline,.has-success .checkbox-inline, 
+.has-success.radio label,.has-success.checkbox label, 
+.has-success.radio-inline label,.has-success.checkbox-inline label,
+.has-success .help-block, {
+    color: #3c763d;
+}
+.has-success .form-control {
+    border-color: #3c763d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+/* 警告 */
+.has-warning .control-label, 
+.has-warning .radio,.has-warning .checkbox, 
+.has-warning .radio-inline,.has-warning .checkbox-inline, 
+.has-warning.radio label,.has-warning.checkbox label, 
+.has-warning.radio-inline label,.has-warning.checkbox-inline label,
+.has-warning .help-block, {
+    color: #3c763d;
+}
+.has-warning .form-control {
+    border-color: #3c763d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+/* 小图标样式 */
+/*基本样式*/
+.has-feedback {
+    position: relative;
+}
+.form-control-feedback {
+    position: absolute;top: 0;right: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+.has-feedback label ~ .form-control-feedback {
+    top: 25px;
+}
+.has-feedback .form-control {
+    padding-right: 42.5px;
+}
+.has-error .form-control-feedback {
+    color: #a94442;
+}
+/*form-inline*/
+@media (min-width: 768px){
+    .form-inline .has-feedback .form-control-feedback {
+        top: 0;
+    }    
+}
+
+
+/* 不同尺寸的输入框 */
+.input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    line-height: 1.3333333;
+    font-size: 18px;
+}
+.input-sm {
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    line-height: 1.5;
+    font-size: 12px;
+}

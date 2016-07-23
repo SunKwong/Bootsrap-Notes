@@ -1,0 +1,51 @@
+@charset"utf-8";
+/* CSS初始化 */
+html,body,h1{
+	margin: 0;
+}
+body{
+	font-family: 'SimHei';
+	background-color: #fff;
+}
+/* 电脑显示样式 */
+@media screen and (min-width: 992px){
+	h1{
+		font-size: 3em；
+		margin:20px 0 15px 0;
+	}
+	.alert{
+		margin: 10px;
+		padding: 10px;
+		background-color: #fee;
+		color: #d33;
+		border: 1px solid #a66;
+	}
+}
+/* 平板显示样式 */
+@media screen and (min-width: 768px) and (max-width: 991px){
+	h1{
+		font-size: 3em；
+		margin:15px 0 8px 0;
+	}
+	.alert{
+		margin: 6px;
+		padding: 6px;
+		background-color: #efe;
+		color: #3a3;
+		border: 1px solid #6a6;
+	}
+}
+/* 手机显示样式 */
+@media screen and (max-width: 767px){
+	h1{
+		font-size: 3em；
+		margin:8px 0 4px 0;
+	}
+	.alert{
+		margin: 4px;
+		padding: 4px;
+		background-color: #eef;
+		color: #33a;
+		border: 1px solid #66a;
+	}
+}

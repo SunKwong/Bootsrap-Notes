@@ -1,0 +1,31 @@
+@charset"utf-8";
+/* Bootstrap样式 */
+.close {
+    float: right;
+    line-height: 1;
+    font-size: 21px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff;
+    color: #000;
+    opacity: 0.2;
+}
+.caret {
+    display: inline-block;
+    width: 0;height: 0;
+    margin-left: 2px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px dashed;
+    vertical-align: middle;
+}
+.glyphicon {
+    position: relative;top: 1px;
+    display: inline-block;
+    line-height: 1;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: normal;
+}
+.glyphicon-cloud::before {
+    content: "☁";
+}

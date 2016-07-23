@@ -1,0 +1,31 @@
+@charset"utf-8";
+/* Bootstrap样式 */
+/*Bootstrap初始样式*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/*圆角图片*/
+.img-rounded {
+    border-radius: 6px;
+}
+/*圆形图片*/
+.img-circle {
+    border-radius: 50%;
+}
+/*边框包裹图片*/
+.img-thumbnail {
+    display: inline-block;
+    max-width: 100%;height: auto;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    line-height: 1.42857;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out 0s;
+}
+/*响应图片*/
+.img-responsive{
+    max-width: 100%;height: auto;
+	display: block;
+}

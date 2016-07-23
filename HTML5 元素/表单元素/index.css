@@ -1,0 +1,71 @@
+@charset"utf-8";
+/*初始化方案*/
+
+/*表单元素初始化*/
+input,button,select,textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input,button,select,textarea,optgroup {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+button,select {
+    text-transform: none;
+}
+/*button*/
+button {
+    overflow: visible;
+}
+button,html input[type="button"],
+input[type="submit"],input[type="reset"] {
+	cursor: pointer;
+    -webkit-appearance: button;
+}
+/*input*/
+input[type="radio"],input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    padding: 0;
+    line-height: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    	 box-sizing: border-box;
+}
+/*select*/
+optgroup {
+    font-weight: bold;
+}
+/*textarea*/
+textarea {
+    overflow: auto;
+}
+
+label {
+	max-width: 100%;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+legend {
+	width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: inherit;
+    font-size: 21px;
+    color: #333;
+    
+}
+
+

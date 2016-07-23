@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>表单样式</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+   	<![endif]-->
+</head>
+<body>
+  <div class="container">
+      <h1>默认表单</h1>
+      <form>
+          <div class="form-group">
+              <label>用户名：</label>
+              <input type="text" class="form-control" placeholder="请输入用户名">
+              <span class="help-block">输入设置的用户名</span>
+          </div>
+          <div class="form-group">
+              <label>密码：</label>
+              <input type="text" class="form-control" placeholder="请输入密码">
+              <span class="help-block">输入设置的密码</span>
+          </div>
+          <div class="checkbox">
+              <label>
+                  <input type="checkbox">同意
+              </label>
+          </div>
+          <div class="form-group">
+              <input type="button" value="提交" class="btn btn-success">
+          </div>
+      </form>
+
+      <h1>内联表单</h1>
+      <form class="form-inline">
+          <div class="form-group">
+              <label class="control-label">用户名：</label>
+              <input type="text" class="form-control" placeholder="用户名...">
+          </div>
+          <div class="form-group">
+              <label class="control-label">密码：</label>
+              <input type="text" class="form-control" placeholder="密码...">
+          </div>
+          <div class="checkbox">
+              <label class="control-label">
+                  <input type="checkbox">同意
+              </label>
+          </div>
+          <div class="form-group">
+              <input type="button" value="提交" class="btn btn-success">
+          </div>
+      </form>
+
+      <h1>水平表单</h1>
+      <form class="form-horizontal">
+          <div class="form-group">
+              <label class="control-label col-xs-2">用户名：</label>
+              <div class="col-xs-7">
+                  <input type="text" class="form-control" placeholder="请输入用户名">
+              </div>
+              <div class="col-xs-3">
+                  <span class="help-block">输入设置的用户名</span>
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label col-xs-2">密码：</label>
+              <div class="col-xs-7">
+                  <input type="text" class="form-control" placeholder="请输入密码">
+              </div>
+              <div class="col-xs-3">
+                  <span class="help-block">输入设置的密码</span>
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="checkbox col-xs-offset-2 col-xs-10">
+                <label class="control-label">
+                    <input type="checkbox">同意
+                </label>
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="col-xs-offset-2 col-xs-10">
+                  <input type="button" value="提交" class="btn btn-success">
+              </div>
+          </div>
+          
+      </form>
+
+  </div>
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+  <!-- HTML和Bootstrap检查工具 -->
+  <script>
+    (function(){
+      var s=document.createElement("script");
+      s.onload=function(){
+        bootlint.showLintReportForCurrentDocument([]);
+      };
+      s.src="../js/bootlint.js";
+      document.body.appendChild(s)})();
+  </script>
+</body>
+</html>

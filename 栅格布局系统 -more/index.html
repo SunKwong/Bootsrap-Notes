@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Grid System</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+   	<![endif]-->
+    <style>
+        div{
+          border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<!-- 可扩展性好！性能好！容易控制！实现了相应式布局 -->
+<div class="container-fluid">
+    <h1>栅格布局系统</h1>
+      <div class="row">
+        <div class="col-md-1">CMD-1</div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">CMD-2</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">CMD-3</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">CMD-4</div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">CMD-5</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">CMD-6</div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">CMD-7</div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">CMD-8</div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">CMD-9</div>
+      </div>
+      <div class="row">
+        <div class="col-md-10">CMD-10</div>
+      </div>
+      <div class="row">
+        <div class="col-md-11">CMD-11</div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">CMD-12</div>
+      </div>
+  </div>
+
+  <div class="container">
+  <!-- 由于设置float，所以多余的会被挤到下面去 -->
+      <h1>一行中防置等宽的多列</h1>
+      <div class="row">
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+        <div class="col-md-1">CMD-1</div>
+
+        <div class="col-md-1">CMD-1</div>
+      </div>
+  </div>
+
+  <div class="container">
+    <h1>一行中放置多个不等的列</h1>
+    <!-- 1:11 2:10 3:9 :4:8 5:7 6:6 -->
+    <!-- 1:10:1 2:8:2 3:6:3 4:4:4 5:2:5 -->
+    <div class="row">
+      <div class="col-md-2">CMD-2</div>
+      <div class="col-md-10">CMD-10</div>
+    </div>
+  </div> -->
+
+  <div class="container">
+    <h1>一个列在不同的屏幕有不同的宽度占比</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-lg-4">PC-4/12 Pad-6/12 Phone 8/12</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>列的偏移</h1>
+    <div class="row">
+      <div class="col-xs-2">CXS-2</div>
+      <div class="col-xs-2 col-xs-offset-8">CXS-2</div>
+    </div>
+  </div>
+
+ 
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+  <!-- HTML和Bootstrap检查工具 -->
+  <script>
+    (function(){
+      var s=document.createElement("script");
+      s.onload=function(){
+        bootlint.showLintReportForCurrentDocument([]);
+      };
+      s.src="../js/bootlint.js";
+      document.body.appendChild(s)})();
+  </script>
+</body>
+</html>

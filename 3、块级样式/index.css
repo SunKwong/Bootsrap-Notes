@@ -1,0 +1,45 @@
+@charset"utf-8";
+/* Bootstrap样式 */
+.pull-left {
+    float: left !important;
+}
+.pull-right {
+    float: right !important;
+}
+/*块级居中*/
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*清除浮动*/
+.clearfix:after{
+	content: " ";
+    display: table;
+    clear: both;
+}
+/*显示/隐藏*/
+.show {
+    display: block !important;
+}
+/* 不占位的隐藏 */
+.hidden {
+    display: none !important;
+}
+/* 占位的隐藏 */
+.invisible {
+    visibility: hidden;
+}
+/* Screen Reader Only */
+/* 仅屏幕阅读软件可见 */
+.sr-only {
+    position: absolute;
+    width: 1px;height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+

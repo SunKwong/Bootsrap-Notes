@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>表格样式</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+   	<![endif]-->
+</head>
+<body>
+
+   <h1>基本表格</h1>
+   <table class="table">
+     <thead>
+        <tr>
+          <th>姓名</th>
+          <th>年龄</th>
+          <th>电话</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>张三</td>
+          <td>19</td>
+          <td>1434243324</td>
+        </tr>
+        <tr>
+          <td>李四</td>
+          <td>21</td>
+          <td>34344312423</td>
+        </tr>
+      </tbody>
+   </table>
+   
+   <h1>隔行变色表格</h1>
+   <table class="table table-striped">
+     <thead>
+        <tr>
+          <th>姓名</th>
+          <th>年龄</th>
+          <th>电话</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>张三</td>
+          <td>19</td>
+          <td>1434243324</td>
+        </tr>
+        <tr>
+          <td>李四</td>
+          <td>21</td>
+          <td>34344312423</td>
+        </tr>
+      </tbody>
+   </table>
+  
+  <h1>带边框的表格</h1>
+   <table class="table table-bordered">
+     <thead>
+        <tr>
+          <th>姓名</th>
+          <th>年龄</th>
+          <th>电话</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>张三</td>
+          <td>19</td>
+          <td>1434243324</td>
+        </tr>
+        <tr>
+          <td>李四</td>
+          <td>21</td>
+          <td>34344312423</td>
+        </tr>
+      </tbody>
+   </table>
+
+   <h1>鼠标悬停表格</h1>
+   <table class="table table-hover">
+     <thead>
+        <tr>
+          <th>姓名</th>
+          <th>年龄</th>
+          <th>电话</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>张三</td>
+          <td>19</td>
+          <td>1434243324</td>
+        </tr>
+        <tr>
+          <td>李四</td>
+          <td>21</td>
+          <td>34344312423</td>
+        </tr>
+      </tbody>
+   </table>
+
+   <h1>响应式表格</h1>
+   <div class="table-responsive">
+     <table class="table">
+       <thead>
+          <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>电话</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>张三</td>
+            <td>19</td>
+            <td>1434243324</td>
+          </tr>
+          <tr>
+            <td>李四</td>
+            <td>21</td>
+            <td>34344312423</td>
+          </tr>
+        </tbody>
+     </table>
+  </div>
+
+  <h1>行高更低的表格</h1>
+  <table class="table table-condensed">
+    <tr>
+      <td>行高更低的表格</td>
+      <td>行高更低的表格</td>
+    </tr>
+    <tr>
+      <td>行高更低的表格</td>
+      <td>行高更低的表格</td>
+    </tr>
+  </table>
+
+  <h4>设置tr/td/单元格背景色</h4>
+  <table class="table">
+    <tr>
+      <td class="active">active</td>
+      <td class="danger">红色</td>
+      <td class="warning">黄色</td>
+      <td class="success">绿色</td>
+      <td class="info">浅蓝色</td>
+    </tr>
+  </table>
+  
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.js"></script>
+  <!-- HTML和Bootstrap检查工具 -->
+  <script>
+    (function(){
+      var s=document.createElement("script");
+      s.onload=function(){
+        bootlint.showLintReportForCurrentDocument([]);
+      };
+      s.src="../js/bootlint.js";
+      document.body.appendChild(s)})();
+  </script>
+</body>
+</html>
